@@ -265,3 +265,130 @@
     background-color: #fafafa;
     color: var(--primary-color);
 }
+
+
+/* Auth form */
+
+.auth-form__container {
+    padding: 0 32px;
+    width: 560px;
+    background-color: var(--white-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 12px;
+}
+
+.auth-form__heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.auth-form__switch-btn {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.auth-form__form {
+}
+
+.auth-form__group {
+
+}
+
+.auth-form_input {
+    height: 40px;
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border: var(--border-color) solid 1px;
+    outline: none;
+}
+
+.auth-form_input:focus {
+    border-color: #777;
+}
+
+
+.auth-form__aside {
+    margin-top: 20px;
+}
+
+.auth-form__policy {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.text__policy-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.auth-form_controls {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 12px;
+}
+
+
+.auth-form_controls-back {
+    margin-right: 10px;
+}
+
+.auth-form__social {
+    background-color: #f5f5f5;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.auth-form__social-icon {
+    font-size: 1.8rem;
+    /* width: 100%; */
+}
+
+.auth-form__social--facebook {
+    background-color: #034aa8;
+    border-radius: 5px ;
+}
+
+.auth-form__social--google {
+    background-color: var(--primary-color);
+    border-radius: 5px ;
+}
+
+.auth-form__social--facebook,
+.auth-form__social--google,
+.auth-form__social-icon {
+    color: var(--white-color);
+}
+
+
+.auth-form__social-icon {
+    margin-left: 8px;
+}
+
+.auth-form__social--text {
+    padding: 0 45px;
+}
+
+
+
+
+

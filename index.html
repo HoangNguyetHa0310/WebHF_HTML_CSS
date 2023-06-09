@@ -27,7 +27,7 @@
                                     <a href="" class="header__qr-link">
                                         <img src="./assets/img/App Store.png" alt="App Store" class="header__qr-donwload-img">
                                     </a>
-                                    <a href="" class="header__qr-link">
+                                    <a hmodal__overlayref="" class="header__qr-link">
                                         <img src="./assets/img/Google Play.png" alt="Google Play" class="header__qr-donwload-img">
                                     </a>
                                 </div>
@@ -104,7 +104,7 @@
     
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--sparate ">Đăng kí </li>
                         <li class="header__navbar-item header__navbar-item--strong  ">Đăng nhập</li>
-                        136
+                        
                         
                     </ul>
     
@@ -120,6 +120,65 @@
 
         </footer>
 
+    </div>
+
+
+    <!-- modal  -->
+    <div class="modal">
+        <div class="modal__overlay">
+
+        </div>
+
+        <div class="modal__body">
+                <!-- form -->
+            <div class="auth-form__container">
+                <div class="auth-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Kí</h3>
+                        <span class="auth-form__switch-btn">Đăng Nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form_input" placeholder="Email của bạn ">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form_input" placeholder="Mật khẩu của bạn  ">
+                        </div>
+                        <div class="auth-form_group">
+                            <input type="password" class="auth-form_input" placeholder="Nhập lại mật khẩu ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="auth-form__aside">
+                    <p class="auth-form__policy">
+                        © 2023 Hoang F1. Tất cả các quyền được bảo lưu.
+                        <a href="" class="text__policy-link">CHÍNH SÁCH BẢO MẬT</a> & <a href="" class="text__policy-link">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+                    </p>
+                </div>
+
+                <div class="auth-form_controls">
+                    <button class="btn btn--normol auth-form_controls-back">TRỞ LẠI</button>
+                    <button class="btn btn--primary">ĐĂNG KÝ</button>
+                </div>
+            </div>
+            
+            <div class="auth-form__social">
+                <a href="" class="auth-form__social--google btn btn-size-s btn--with-icon">
+                    <i class="auth-form__social-icon fa-brands fa-google"></i>
+                    <span class="auth-form__social--text">              
+                        Connect with Google
+                    </span>
+                </a>
+                <a href="" class="auth-form__social--facebook btn btn-size-s btn--with-icon">
+                    <i class="auth-form__social-icon fa-brands fa-facebook"></i>
+                    <span class="auth-form__social--text">
+                        Connect with Facebook
+                    </span>
+                </a>
+            </div>
+        </div>
     </div>
 
 </body>
