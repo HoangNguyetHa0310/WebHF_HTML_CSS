@@ -102,10 +102,30 @@
                             </a>    
                         </li>
     
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--sparate ">Đăng kí </li>
-                        <li class="header__navbar-item header__navbar-item--strong  ">Đăng nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--sparate ">Đăng kí </li>
+                        <li class="header__navbar-item header__navbar-item--strong  ">Đăng nhập</li> -->
+                        <li class="header__navbar-item  header__navbar-use">
+                            
+                            <img src="https://i.pinimg.com/236x/a6/b1/c1/a6b1c1b8c55d6c021863e7d01ab34494.jpg" alt="" class="header__navbar-use-img">
+                            <span class="header__navbar-use-name">Hoàng Nguyệt Hạ</span>
+
+                            <ul class="header__navbar-use-menu">
+                                <li class="header__navbar-use-item">
+                                    <a href="">Tài khoản của tôi </a>
+                                </li>
+                                <li class="header__navbar-use-item">
+                                    <a href="">Địa chỉ của tôi </a>
+                                </li>
+                                <li class="header__navbar-use-item">
+                                    <a href="">Đơn mua </a>
+                                </li>
+                                <li class="header__navbar-use-item">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
                         
-                        
+
                     </ul>
     
                 </nav>   
@@ -262,9 +282,91 @@
             </div>
         </header>
 
-        <div class="container">
+        <!-- grid xong đến row xong đến column 
+            phân theo 3 cấp là:
 
-        </div>
+             .grid {
+                *trong grid có thể có nhiều row* 
+                .row {
+                    *trong row có thể có nhiều column*
+                    column{
+
+                    }
+                }
+            } -->
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <!-- Phần danh mục  -->
+                    <div class="grid__column-2">
+                        <nav class="catrgory">
+                            <h3 class="catrgory_heading">
+                                <i class="catrgory_heading-icon fa-solid fa-list"></i>
+                                Danh Mục 
+                            </h3>
+            
+                            <ul class="catrgory_list">
+                                <li class="catrgory-item catrgory-item--active">
+                                    <a href="#" class="catrgory-item_link">Đồng Hồ</a>
+                                </li>
+                                <li class="catrgory-item">
+                                    <a href="#" class="catrgory-item_link">Đồ Trang Điểm </a>
+                                </li>
+                                <li class="catrgory-item">
+                                    <a href="#" class="catrgory-item_link">Phụ Kiện Điện Thoại & Máy tính</a>
+                                </li>
+                                <li class="catrgory-item">
+                                    <a href="#" class="catrgory-item_link">Quần Áo Trẻ Con </a>
+                                </li>
+                                <li class="catrgory-item">
+                                    <a href="#" class="catrgory-item_link">Sữa Rửa Mặt & Nước Tẩy Trang</a>
+                                </li>
+                                <li class="catrgory-item">
+                                    <a href="#" class="catrgory-item_link">
+                                        <span class="catrgory-item_link-add">Thêm</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Phần sản phẩm  -->
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter_label">Sắp Xếp Theo</span>
+                            <button class="home-filter-btn btn">Phổ Biến</button>
+                            <button class="home-filter-btn btn btn--primary">Mới Nhất</button>
+                            <button class="home-filter-btn btn">Bán Chạy</button>
+
+                            <div class="select-input">
+                                <span class="select-input_label">Giá</span>
+                                <i class="select-input_icon fa-solid fa-chevron-down"></i>
+                            </div>
+
+                            <div class="home-finter__page">
+                                <span class="home-finter__page-num">
+                                    <span class="home-finter__page-fist">1</span>
+                                    /14
+                                </span>
+                                <div class="home-finte__page-control">
+                                    <a href="" class="home-finte__page-btn">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                    </a>
+                                    <a href="" class="home-finte__page-btn">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                
+                            154
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> 
 
         <footer class="footer">
 

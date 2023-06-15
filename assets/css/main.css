@@ -8,6 +8,7 @@
 }
  
 .header__navbar-list {
+    display: flex;
     list-style: none;
     padding-left: 0;
     margin: 4px 0 0 0 ;
@@ -18,6 +19,86 @@
     position: relative;
     min-height: 26px;
 }
+
+.header__navbar-use {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header__navbar-use-name {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+.header__navbar-use-img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(0 , 0, 0, 0.2);
+
+}
+
+.header__navbar-use-menu::after {
+    position: absolute;
+    content: "";
+    width: 160px;
+    height: 15px;
+    top: -15px;
+}
+
+.header__navbar-use:hover .header__navbar-use-menu {
+    display: block;
+    transform-origin: calc(100% - 50%) top;
+    animation: headerNotifyGrowth ease-in 0.3s;
+}
+
+.header__navbar-use-menu {
+    position: absolute;
+    top: 100%;
+    right: -30px;
+    width: 160px;
+    background-color: var(--white-color);
+    padding-left: 0 ;
+    margin-top: 8px;
+    border-radius: 3px;
+    z-index: 1;
+    list-style: none;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 4px #b3b3b3 ;
+    display: none;
+}
+
+
+.header__navbar-use-item::before {
+    position: absolute;
+    content: "";
+    border-width: 17px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    right: 59px;
+    top: -30px;
+}
+
+
+.header__navbar-use-item a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.header__navbar-use-item a:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+    color:#04d4b8 ;
+}
+
+
 
 .header__navbar-item--has-qr:hover .header__qr {
     display: block;
@@ -39,7 +120,7 @@
 .header__navbar-item ,
 .header__navbar-item-link,
 .header__navbar-icon-link {
-    display: inline-flex;
+    display:flex;
     align-items: center;
 
     
@@ -266,9 +347,6 @@
 
 
 /* Auth form register*/
-.form-register  {
-    /* display: none; */
-}
 
 .auth-form__container {
     padding: 0 32px;
@@ -447,18 +525,6 @@
     flex: 1;
     position: relative;
 }
-/* 
-.header__search-input-history:hover .header__search-history {
-    display: block;
-}
-
-.header__search-input-wrap::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    top: 20px;
-} */
 
 .header__search-input:focus ~ .header__search-history {
     display: block;
@@ -770,9 +836,6 @@
     margin: 0;
 }
 
-.header__cart-item-price-wrap {
-
-}
 
 .header__cart-item-price {
     font-size: 1.4rem;
@@ -828,3 +891,126 @@
 .header__cart-view-cart:hover {
     background-color: #f05d41;
 }
+
+
+/* app__container */
+
+.app__container {
+    background-color: #f5f5f5;
+}
+
+.app__content {
+    padding-top: 36px;
+}
+
+.catrgory {
+    background-color: var(--white-color);
+    border-radius: 2px;
+
+}
+
+.catrgory_heading {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 8px 12px;
+    border-bottom: 1px solid #E9E9E9;
+
+
+}
+
+.catrgory_heading-icon {
+    font-size:1.4rem;
+    margin-right: 4px;
+
+}
+
+.catrgory_list {
+    padding:0 0 8px 0;
+    list-style: none;
+}
+
+
+.catrgory-item--active .catrgory-item_link {
+    font-weight: 600;
+    color: #EE4D2D;
+
+}
+
+.catrgory-item--active .catrgory-item_link::before {
+    position: absolute;
+    content: "";
+    border: 4px solid ;
+    border-color: transparent transparent transparent var(--primary-color);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+}
+
+.catrgory-item_link {
+    position: relative;
+    display: block;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px 25px ;
+    font-weight: 400;
+    transition: right linear 0.2s;
+    right: 0;
+    line-height: 2.2rem;
+}
+
+.catrgory-item_link:hover {
+    color: #EE4D2D;
+    right: -3px;
+
+}
+
+.catrgory-item_link-add {
+    font-size: 1.5rem;
+    margin-right: 4px;
+}
+
+/* Column 10 and Home finter */
+
+.home-filter {
+    background-color: #EDEDED;
+    display: flex;
+    align-items: center;
+    padding: 14px 22px;
+}
+
+.home-filter_label {
+    font-size: 1.4rem;
+    color: #555;
+    margin-right: 16px;
+}
+
+.home-filter-btn {
+    margin-right: 12px;
+    min-width: 90px;
+}
+
+.home-finter__page {
+    display: flex;
+    align-items: center;
+}
+
+.home-finter__page-num {
+
+}
+
+.home-finter__page-fist {
+
+}
+
+.home-finte__page-control {
+
+}
+
+.home-finte__page-btn {
+
+}
+
+
